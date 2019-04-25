@@ -5,7 +5,7 @@
   <base href='https://satra.ru/'>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=1024, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title> Сатра.ру - интернет-магазин сантехники от А до Я в Москве</title>
   <meta name="description"
     content="Крупнейший интернет-магазин сантехники Москвы. Низкие цены - высокое качество. Только оригинальная сантехника. Доставка по всей России.">
@@ -90,100 +90,267 @@
     </header>
     <div id="content">
       <!--Новый лендинг-->
-      <link rel="stylesheet" type="text/css" href="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/css/landing-page.css" media="all">
+      <link rel="stylesheet" type="text/css" href="http://localhost:3000/css/landing-page.css" media="all">
       <div class="landing">
-        <div class="landing-home">
-          <div class="lp-container">
-            <div class="landing-home__container">
-              <div class="landing-home__content">
-                <img src="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/img/home-text.png" alt="">
-                <span class="landing-home__text">Смешные цены</span>
-                <span class="landing-home__text">на сантехнику</span>
-                <span class="landing-home__text">известных брендов</span>
-                <span class="landing-home__date">Срок проведения акции с 1.04 по 7.04</span>
-                <div class="scroll-button">
-                  <a href="#brands" class="scroll-button__button"></a>
+        <!---->
+        <div class="block home-block">
+          <div data-src='http://localhost:3000/img/bg-home.jpg' class="background lazy"></div>
+          <div class="block__container">
+            <div class="block__content">
+              <span class="home-block__title">НА ДАЧЕ С КОМФОРТОМ!</span>
+              <span class="home-block__subtitle">Срок проведения акции с 15.05 по 15.06</span>
+            </div>
+            <div class="scroll-button">
+              <a href="#block-slider" class="scroll-button__button"></a>
+            </div>
+          </div>
+        </div>
+        <!---->
+        <div class="block block-slider" id='block-slider'>
+          <div data-src='http://localhost:3000/img/bg-2.jpg' class="background lazy"></div>
+          <div class="block__container">
+            <div class="block__content">
+              <span class="block-title">КУХНЯ - КАК ДОМА!</span>
+              <span class="block-description">Хотите обустроить дачную кухню, чтобы она ничем не уступала городской? Это легко сделать с минимальными затратами в нашем магазине. Выбирайте то, что понравится, а мы сделаем доставку в самые короткие сроки!</span>
+            </div>
+            <div class="cook-slider">
+              <div class="cook-slide">
+                <a href="#">
+                  <div class="cook-slide__image">
+                    <img class="lazy" data-src="http://localhost:3000/img/item1.png" alt="">
+                  </div>
+                  <span class="cook-slide__title">СКИДКИ до 50%</span>
+                  <span class="cook-slide__text">на Смесители для кухни</span>
+                </a>
+              </div>
+              <div class="cook-slide">
+                <a href="#">
+                  <div class="cook-slide__image">
+                    <img class="lazy" data-src="http://localhost:3000/img/item2.png" alt="">
+                  </div>
+                  <span class="cook-slide__title">СКИДКИ до 50%</span>
+                  <span class="cook-slide__text">на Смесители для кухни</span>
+                </a>
+              </div>
+              <div class="cook-slide">
+                <a href="#">
+                  <div class="cook-slide__image">
+                    <img class="lazy" data-src="http://localhost:3000/img/item3.png" alt="">
+                  </div>
+                  <span class="cook-slide__title">СКИДКИ до 50%</span>
+                  <span class="cook-slide__text">на Смесители для кухни</span>
+                </a>
+              </div>
+              <div class="cook-slide">
+                <a href="#">
+                  <div class="cook-slide__image">
+                    <img class="lazy" data-src="http://localhost:3000/img/item4.png" alt="">
+                  </div>
+                  <span class="cook-slide__title">СКИДКИ до 50%</span>
+                  <span class="cook-slide__text">на Смесители для кухни</span>
+                </a>
+              </div>
+              <div class="cook-slide">
+                <a href="#">
+                  <div class="cook-slide__image">
+                    <img class="lazy" data-src="http://localhost:3000/img/item5.png" alt="">
+                  </div>
+                  <span class="cook-slide__title">СКИДКИ до 50%</span>
+                  <span class="cook-slide__text">на Смесители для кухни</span>
+                </a>
+              </div>
+            </div>
+            <div class="scroll-button home-block__scroll-button">
+              <a href="#shower-block" class="scroll-button__button"></a>
+            </div>
+          </div>
+        </div>
+        <div id='shower-block' class="block shower-block">
+          <div data-src='http://localhost:3000/img/bg-3.jpg' class="background lazy"></div>
+          <div class="block__container">
+            <div class="block__content">
+              <div class="shower-block__container">
+                <div class="shower-block-item">
+                  <a href='#' class="shower-block-item__container">
+                    <div class="cover-box">
+                      <img class="lazy"data-src="http://localhost:3000/img/icon1.png" alt="">
+                    </div>
+                    <span class="shower-block-item__title">СКИДКИ до 50%</span>
+                    <span class="shower-block-item__text">на Унитазы</span>
+                  </a>
+                </div>
+                <div class="shower-block-item">
+                  <a href='#' class="shower-block-item__container">
+                    <div class="cover-box">
+                      <img class="lazy"data-src="http://localhost:3000/img/icon2.png" alt="">
+                    </div>
+                    <span class="shower-block-item__title">СКИДКИ до 50%</span>
+                    <span class="shower-block-item__text">на Раковины</span>
+                  </a>
+                </div>
+                <div class="shower-block-item">
+                  <a href='#' class="shower-block-item__container">
+                    <div class="cover-box">
+                      <img class="lazy"data-src="http://localhost:3000/img/icon3.png" alt="">
+                    </div>
+                    <span class="shower-block-item__title">СКИДКИ до 50%</span>
+                    <span class="shower-block-item__text">на Мебель</span>
+                  </a>
+                </div>
+                <div class="shower-block-item">
+                  <a href='#' class="shower-block-item__container">
+                    <div class="cover-box">
+                      <img class="lazy"data-src="http://localhost:3000/img/icon4.png" alt="">
+                    </div>
+                    <span class="shower-block-item__title">СКИДКИ до 50%</span>
+                    <span class="shower-block-item__text">на Душевые кабины</span>
+                  </a>
+                </div>
+                <div class="shower-block-item">
+                  <a href='#' class="shower-block-item__container">
+                    <div class="cover-box">
+                      <img class="lazy"data-src="http://localhost:3000/img/icon5.png" alt="">
+                    </div>
+                    <span class="shower-block-item__title">СКИДКИ до 50%</span>
+                    <span class="shower-block-item__text">на Душевые уголки</span>
+                  </a>
+                </div>
+                <div class="shower-block-item">
+                  <a href='#' class="shower-block-item__container">
+                    <div class="cover-box">
+                      <img class="lazy"data-src="http://localhost:3000/img/icon6.png" alt="">
+                    </div>
+                    <span class="shower-block-item__title">СКИДКИ до 50%</span>
+                    <span class="shower-block-item__text">на Аксессуары</span>
+                  </a>
+                </div>
+                <div class="shower-block-item">
+                  <a href='#' class="shower-block-item__container">
+                    <div class="cover-box">
+                      <img class="lazy"data-src="http://localhost:3000/img/icon7.png" alt="">
+                    </div>
+                    <span class="shower-block-item__title">СКИДКИ до 50%</span>
+                    <span class="shower-block-item__text">на Водонагреватели</span>
+                  </a>
+                </div>
+                <div class="shower-block-item">
+                  <a href='#' class="shower-block-item__container">
+                    <div class="cover-box">
+                      <img class="lazy"data-src="http://localhost:3000/img/icon8.png" alt="">
+                    </div>
+                    <span class="shower-block-item__title">СКИДКИ до 50%</span>
+                    <span class="shower-block-item__text">на Душевые стойки</span>
+                  </a>
+                </div>
+                <div class="shower-block-item">
+                  <a href='#' class="shower-block-item__container">
+                    <div class="cover-box">
+                      <img class="lazy"data-src="http://localhost:3000/img/icon9.png" alt="">
+                    </div>
+                    <span class="shower-block-item__title">СКИДКИ до 50%</span>
+                    <span class="shower-block-item__text">на Смесители для раковины</span>
+                  </a>
+                </div>
+                <div class="shower-block-item">
+                  <a href='#' class="shower-block-item__container">
+                    <div class="cover-box">
+                      <img class="lazy"data-src="http://localhost:3000/img/icon10.png" alt="">
+                    </div>
+                    <span class="shower-block-item__title">СКИДКИ до 50%</span>
+                    <span class="shower-block-item__text">на Поддоны</span>
+                  </a>
+                </div>
+              </div>
+              <div class="shower-block__text">
+                <span class="block-title">ОБУСТРАИВАЕМ<br> ДУШЕВУЮ ЗОНУ</span>
+                <span class="block-description">Обустроить в загородном доме санитарные помещения можно так же, как и в своей городской квартире. Причем сейчас в рамках новой акции вы сможете это сделать за минимальные деньги!</span>
+              </div>
+            </div>
+            <div class="scroll-button">
+              <a href="#popular-block" class="scroll-button__button"></a>
+            </div>
+          </div>
+        </div>
+        <div class="block popular-block" id='popular-block'>
+            <div data-src='http://localhost:3000/img/bg-2.jpg' class="background lazy"></div>
+            <div class="block__container">
+              <div class="block__content">
+                <span class="block-title">самое популярное<br> для дачи</span>
+                <span class="block-description">Хотите обустроить дачную кухню, чтобы она ничем не уступала городской? Это легко сделать с минимальными затратами в нашем магазине. Выбирайте то, что понравится, а мы сделаем доставку в самые короткие сроки!</span>   
+              </div>
+              <div class="block__content block__content_style2">
+                <div class="popular-slider">
+                  <div class="popular-slide">
+                    <a href="#" class="popular-slide__container">
+                      <div class="cover-box">
+                        <img class="lazy" data-src="http://localhost:3000/img/popular-test.jpg" alt="">
+                        <div class="popular-slide__discount">-18%</div>
+                      </div>
+                      <div class="popular-slide__content">
+                        <span class="popular-slide__title">Мебель для ванной Sanflor Мокко 45 венге, белая L</span>
+                        <div class="popular-slide__section">
+                          <span class="popular-slide__price">4 495<span class="rub">руб.</span></span>
+                          <span class="popular-slide__price">5 462<span class="rub">руб.</span></span>
+                          <span class="popular-slide__price">-967<span class="rub">руб.</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="popular-slide">
+                    <a href="#" class="popular-slide__container">
+                      <div class="cover-box">
+                        <img class="lazy" data-src="http://localhost:3000/img/popular-test.jpg" alt="">
+                        <div class="popular-slide__discount">-18%</div>
+                      </div>
+                      <div class="popular-slide__content">
+                        <span class="popular-slide__title">Мебель для ванной Sanflor Мокко 45 венге, белая L, , белая L, , белая L, , белая L</span>
+                        <div class="popular-slide__section">
+                          <span class="popular-slide__price">4 495<span class="rub">руб.</span></span>
+                          <span class="popular-slide__price">5 462<span class="rub">руб.</span></span>
+                          <span class="popular-slide__price">-967<span class="rub">руб.</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="popular-slide">
+                    <a href="#" class="popular-slide__container">
+                      <div class="cover-box">
+                        <img class="lazy" data-src="http://localhost:3000/img/popular-test.jpg" alt="">
+                        <div class="popular-slide__discount">-18%</div>
+                      </div>
+                      <div class="popular-slide__content">
+                        <span class="popular-slide__title">Мебель для ванной Sanflor Мокко 45 венге, белая L</span>
+                        <div class="popular-slide__section">
+                          <span class="popular-slide__price">4 495<span class="rub">руб.</span></span>
+                          <span class="popular-slide__price">5 462<span class="rub">руб.</span></span>
+                          <span class="popular-slide__price">-967<span class="rub">руб.</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="popular-slide">
+                    <a href="#" class="popular-slide__container">
+                      <div class="cover-box">
+                        <img class="lazy" data-src="http://localhost:3000/img/popular-test.jpg" alt="">
+                        <div class="popular-slide__discount">-18%</div>
+                      </div>
+                      <div class="popular-slide__content">
+                        <span class="popular-slide__title">Мебель для ванной Sanflor Мокко 45 венге, белая L</span>
+                        <div class="popular-slide__section">
+                          <span class="popular-slide__price">4 495<span class="rub">руб.</span></span>
+                          <span class="popular-slide__price">5 462<span class="rub">руб.</span></span>
+                          <span class="popular-slide__price">-967<span class="rub">руб.</span></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="popular-block__more">
+                  <a href="#">начать покупки</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="brands">
-          <div class="brands__container" id='brands'>
-            <span class="brands__title">бренды, участвующие в акции</span>
-            <div class="brands__section">
-              <div class="lp-container">
-                <div class="brands__content brands__content_top">
-                  <div class="brand-block">
-                    <a href="#" class="brand-block__container">
-                      <img src="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/img/brand1.jpg" alt="">
-                      <span class="brand-block__discount">-26%</span>
-                    </a>
-                  </div>
-                  <div class="brand-block">
-                    <a href="#" class="brand-block__container">
-                      <img src="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/img/brand2.jpg" alt="">
-                      <span class="brand-block__discount">-30%</span>
-                    </a>
-                  </div>
-                  <div class="brand-block">
-                    <a href="#" class="brand-block__container">
-                      <img src="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/img/brand3.jpg" alt="">
-                      <span class="brand-block__discount">-20%</span>
-                    </a>
-                  </div>
-                  <div class="brand-block">
-                    <a href="#" class="brand-block__container">
-                      <img src="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/img/brand4.jpg" alt="">
-                      <span class="brand-block__discount">-19%</span>
-                    </a>
-                  </div>
-                  <div class="brand-block">
-                    <a href="#" class="brand-block__container">
-                      <img src="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/img/brand5.jpg" alt="">
-                      <span class="brand-block__discount">-10%</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="brands__content brands__content_center">
-                  <a href="#" class="brands__more">все товары со скидками</a>
-                </div>
-                <div class="brands__content brands__content_bottom">
-                  <div class="brand-block">
-                    <a href="#" class="brand-block__container">
-                      <img src="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/img/brand6.jpg" alt="">
-                      <span class="brand-block__discount">-10%</span>
-                    </a>
-                  </div>
-                  <div class="brand-block">
-                    <a href="#" class="brand-block__container">
-                      <img src="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/img/brand7.jpg" alt="">
-                      <span class="brand-block__discount">-15%</span>
-                    </a>
-                  </div>
-                  <div class="brand-block">
-                    <a href="#" class="brand-block__container">
-                      <img src="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/img/brand8.jpg" alt="">
-                      <span class="brand-block__discount">-10%</span>
-                    </a>
-                  </div>
-                  <div class="brand-block">
-                    <a href="#" class="brand-block__container">
-                      <img src="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/img/brand9.jpg" alt="">
-                      <span class="brand-block__discount">-17%</span>
-                    </a>
-                  </div>
-                  <div class="brand-block">
-                    <a href="#" class="brand-block__container">
-                      <img src="https://ruslanmmr.github.io/satra-promo/land-sale2018/app/img/brand10.jpg" alt="">
-                      <span class="brand-block__discount">-10%</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <script>
         var linkNav = document.querySelectorAll('[href^="#"]'),
@@ -284,71 +451,12 @@
       </div>
     </footer><a href="#" class="up"></a>
   </div>
-  <!--noindex-->
-  <div style="display:none">
-    <div class="pop-up" id="pop-submit">
-      <img src="/templates/satra/images/spasibo.svg" alt="" class="subm-img" width="219" height="219">
-      <div class="pop-title">наши менеджеры свяжутся с вами<br>для уточнения всех деталей</div>
-    </div>
-    <div id="feedback_form_popup_area" class="pop-up fancy_ajax">
-      <div class="popup_preloader"></div>
-    </div>
-  </div>
-  <div id="filterhint"></div>
   <!--/noindex-->
-  <script type="text/javascript" src="/templates/satra/js/jquery-1.12.0.min.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/jquery-ui-1.10.2.custom.min.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/jquery.cookie.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/jquery.ui.slider.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/jquery.formstyler.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/jquery.fancybox.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/slick.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/jquery.mCustomScrollbar.js"></script>
-  <link rel="stylesheet" href="/templates/satra/js/tipso.css">
-  <script type="text/javascript" src="/templates/satra/js/tipso.min.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/jquery.equalheights.js"></script>
-  <script src="/templates/satra/js/jquery.inputmask.bundle.js" type="text/javascript"></script>
-  <script src="/templates/satra/js/phone-ru.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/i18n.ru.js"></script>
-  <script type="text/javascript" charset="utf-8" src="/templates/satra/js/__common.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/jquery.fixedtable.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/eskju.jquery.scrollflow.min.js"></script>
-  <script type="text/javascript" src="/templates/satra/js/main.js?2"></script>
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext"
-    rel="stylesheet" type="text/css">
-  <div style="display:none;">
-    <div id="add_to_cart_result_area"></div>
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "WebSite",
-        "url": "https://satra.ru/",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://satra.ru/search/search_found/?search_string=={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      }
-    </script>
-    <script type="text/javascript">
-      /* <![CDATA[ */
-      var google_conversion_id = 860719337;
-      var google_custom_params = window.google_tag_params;
-      var google_remarketing_only = true;
-      /* ]]> */
-    </script>
-    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-    </script>
-    <noscript>
-      <div style="display:inline;">
-        <img height="1" width="1" style="border-style:none;" alt=""
-          src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/860719337/?guid=ON&amp;script=0" />
-      </div>
-    </noscript>
-
-    <script src="https://cdn.leadplan.ru/loader.js?sk=cf41a2e0e42747c6bd0ea0cea28f418e"></script>
-  </div>
+  <script src="/templates/satra/js/jquery-1.12.0.min.js"></script>
+  <script src="/templates/satra/js/slick.js"></script>
+  <!--custom-->
+  <script src="http://localhost:3000/js/jquery.lazy-master/jquery.lazy.min.js"></script>
+  <script src="http://localhost:3000/js/custom.js"></script>
 </body>
 
-</html><!-- This page generated in 0.074675 secs -->
+</html>
