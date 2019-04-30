@@ -1,0 +1,256 @@
+doctype html
+html(lang='ru')
+  head
+    base(href='https://satra.ru/')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    //meta(name='viewport', content='width=1024, initial-scale=1')
+    title  Сатра.ру - интернет-магазин сантехники от А до Я в Москве
+    meta(name='description', content='Крупнейший интернет-магазин сантехники Москвы. Низкие цены - высокое качество. Только оригинальная сантехника. Доставка по всей России.')
+    meta(property='og:title', content=' Сатра.ру - интернет-магазин сантехники от А до Я в Москве')
+    meta(property='og:description', content='Крупнейший интернет-магазин сантехники Москвы. Низкие цены - высокое качество. Только оригинальная сантехника. Доставка по всей России.')
+    meta(property='og:image', content='https://satra.ru/templates/satra/images/logo.svg')
+    meta(property='og:type', content='website')
+    meta(property='og:url', content='https://satra.ru/')
+    link(rel='stylesheet', type='text/css', href='/templates/satra/css/style.css')
+    link(rel='stylesheet', type='text/css', href='/templates/satra/css/print.css', media='print')
+    link(rel='canonical', href='https://satra.ru/')
+  body.uguest.m_content
+    #container
+      header#header
+        .head-top
+          .cont-in
+            table
+              tbody
+                tr
+                  td
+                    .logo-block
+                      span.logo
+                        img(src='/templates/satra/images/logo.svg', alt='Интернет-магазин сантехники в Москве')
+                  td
+                    .head-phone
+                      .phone
+                        a(href='tel:8%20(800)%20777-85-08') 8 (800) 777-85-08
+                      .phone
+                        a(href='tel:8%20(499)%20753-88-88') 8 (499) 753-88-88
+                      .feedback_area
+                        a.fancy(href='#feedback_form_popup_area') Обратная связь
+                  td
+                    .head-phone.worktime
+                      .worktime_title График работы
+                      .worktime_content пн-вс 9:00 - 22:00
+                  td.head-address-td
+                    .head-address
+                      .head
+                        a(href='/contacts/') Точки самовывоза
+                      .mail
+                        // noindex
+                        a(href='mailto:zakaz@satra.ru', rel='nofollow') zakaz@satra.ru
+                        // /noindex
+                  td
+                    ul.user-links.popup
+                      li#header-user-links-user.user
+                        a(href='/users/auth/', rel='nofollow')
+                          i.icon-user
+                          span войти
+                      li#main_compare_page_js
+                        a(href='/emarket/compare/', rel='nofollow')
+                          i.icon-compare
+                          span
+                      li#main_cart_page_js
+                        a(href='/emarket/cart/', rel='nofollow')
+                          i.icon-basket
+                          span
+        .menu-line
+          .cont-in
+            form.search(action='/search/search_found/', method='get')
+              .search_area
+                button.s-btn(type='submit')
+                input.textinputs.search.s-txt(type='text', placeholder='Поиск', name='search_string')
+            table.top_menu
+              tbody
+                tr
+                  td
+                    a(href='/shourum/') Шоурум
+                  td
+                    a(href='/oplata/') Оплата
+                  td
+                    a(href='/dostavka/') Доставка
+                  td
+                    a(href='/ustanovka/') Установка
+                  td
+                    a(href='/contacts/') Контакты
+                  td
+                    a(href='/about/') О компании
+      #content
+        // Новый лендинг
+        link(rel='stylesheet', type='text/css', href='http://localhost:9000/styles/landing-page.min.css', media='all')
+        .landing
+          .landing__background.lazy(data-src='http://localhost:9000/img/bg.jpg')
+          .home
+            .container-lp
+              .home__container
+                .home__text
+                  .home__title
+                    span ПОБЕДА<br>
+                    | НАД ЦЕНАМИ!
+                  .home__date Срок проведения с 9 мая по 12 мая
+                .home__image
+                  img(data-src="http://localhost:9000/img/main-logo.png", alt="").lazy
+                .scroll-button
+                  a(href="#").scroll-button__button
+          .product
+            .container-lp
+              .product__container
+                .product__title товары, участвующие в акции
+                .product__content
+                  .product__button
+                    a(href="#").more-btn все товары со скидками
+                  .product__blocks
+                    .product__row
+                      .product-block
+                        a(href="#").product-block__container
+                          .product-block__image.cover-box
+                            img(data-src="http://localhost:9000/img/product1.jpg", alt="").lazy
+                          .product-block__title Унитазы
+                      .product-block
+                        a(href="#").product-block__container
+                          .product-block__image.cover-box
+                            img(data-src="http://localhost:9000/img/product2.jpg", alt="").lazy
+                          .product-block__title Мебель для ванной
+                      .product-block
+                        a(href="#").product-block__container
+                          .product-block__image.cover-box
+                            img(data-src="http://localhost:9000/img/product3.jpg", alt="").lazy
+                          .product-block__title Инсталляции
+                    .product__row
+                      .product-block
+                        a(href="#").product-block__container
+                          .product-block__image.cover-box
+                            img(data-src="http://localhost:9000/img/product4.jpg", alt="").lazy
+                          .product-block__title Полотенцесушители
+                      .product-block
+                        a(href="#").product-block__container
+                          .product-block__image.cover-box
+                            img(data-src="http://localhost:9000/img/product5.jpg", alt="").lazy
+                          .product-block__title Кухонные мойки
+                    .product__row
+                      .product-block
+                        a(href="#").product-block__container
+                          .product-block__image.cover-box
+                            img(data-src="http://localhost:9000/img/product6.jpg", alt="").lazy
+                          .product-block__title Смесители
+                      .product-block
+                        a(href="#").product-block__container
+                          .product-block__image.cover-box
+                            img(data-src="http://localhost:9000/img/product7.jpg", alt="").lazy
+                          .product-block__title Душевые кабины
+                      .product-block
+                        a(href="#").product-block__container
+                          .product-block__image.cover-box
+                            img(data-src="http://localhost:9000/img/product8.jpg", alt="").lazy
+                          .product-block__title Ванны
+                          
+                  
+
+        //       
+        script.
+          var linkNav = document.querySelectorAll('[href^="#"]'),
+          V = 0.7; // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+          for (var i = 0; i < linkNav.length; i++) {
+          linkNav[i].addEventListener('click', function (e) {
+          e.preventDefault();
+          var w = window.pageYOffset,
+          hash = this.href.replace(/[^#]*(.*)/, '$1');
+          t = document.querySelector(hash).getBoundingClientRect().top,
+          start = null;
+          requestAnimationFrame(step);
+          function step(time) {
+          if (start === null) start = time;
+          var progress = time - start,
+          r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
+          window.scrollTo(0, r);
+          if (r != w + t) {
+          requestAnimationFrame(step)
+          } else {
+          location.hash = hash
+          }
+          }
+          }, false);
+          }
+      footer#footer
+        .foot-in
+          .cont-in
+            .foot-left
+              // noindex
+              span.foot-logo
+                img(src='/templates/satra/images/logo.svg', alt='')
+              ul.foot-left-links
+                li
+                  span Гарантия вашего качества
+                li
+                  span Лучшие цены
+                li
+                  span Безграничный выбор
+                li
+                  span Лучшие специалисты
+                li
+                  span Хорошее настроение
+              // /noindex
+            .foot-center
+              .foot-right
+                .h6.hidden-sm.hidden-xs Мы в социальных сетях
+                .foot-soc
+                  a.soc1(href='https://vk.com/public133900387', target='_blank', rel='nofollow')
+                  a.soc2(href='https://ok.ru/group/53247490392281', target='_blank', rel='nofollow')
+                  a.soc3(href='https://www.facebook.com/satra.ru/', target='_blank', rel='nofollow')
+                  a.soc5(href='https://www.instagram.com/satra_ru/', target='_blank', rel='nofollow')
+                  a.soc6(href='https://www.youtube.com/channel/UC62q9mQCYInD8MZleJh70rg', target='_blank', rel='nofollow')
+                script.
+                  (function (open) {
+                  XMLHttpRequest.prototype.open = function (method, url, async, user, pass) {
+                  this.addEventListener("readystatechange", function () {
+                  var parser = document.createElement('a')
+                  parser.href = url;
+                  if (parser.hostname == 'sovetnik.market.yandex.ru') {
+                  this.abort();
+                  }
+                  }, false);
+                  open.call(this, method, url, async, user, pass);
+                  };
+                  })(XMLHttpRequest.prototype.open);
+              .foot-cont
+                .h6 Контакты
+                .c-addr
+                  .adres
+                    span Москва
+                    | ,
+                    br
+                    span
+                      | 41 км. МКАД,
+                      br
+                      | ТК «Славянский мир» Б19/1
+                .c-time Пн – Вс 09:00 – 22:00
+                .c-phone 8 (800) 777-85-08
+              .foot-nav
+                .h6 ИНФОРМАЦИЯ
+                ul
+                  li
+                    a(href='/contacts/') Контакты
+                  li
+                    a(href='/about/') О компании
+                  li
+                    a(href='/brands/') Бренды
+                  li
+                    a(href='/dostavka/') Доставка
+                  li
+                    a(href='/oplata/') Оплата
+                  li
+                    a(href='/vozvrat_tovara/') Возврат товара
+          .foot-line
+            .cont-in 2016-2019 © Satra.ru — Интернет-магазин сантехники. Все права защищены
+    // /noindex
+    script(src='/templates/satra/js/jquery-1.12.0.min.js')
+    // custom
+    script(src='http://localhost:9000/js/libs.min.js')
+    script(src='http://localhost:9000/js/lp.min.js')
